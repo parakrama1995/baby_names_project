@@ -28,3 +28,21 @@ private:
 	string name;
 	int weight;
 };
+
+bool jw_search ( int *list, int size, int key, int*& rec )
+{
+  // Basic sequential search
+  bool found = false;
+  int i;
+
+  for ( i = 0; i < size; i++ ) {
+    if ( key == list[i] )
+      break;
+  }
+  if ( i < size ) {
+    found = true;
+    rec = &list[i];
+  }
+
+  return found;
+}
