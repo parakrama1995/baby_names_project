@@ -9,7 +9,7 @@ public:
 	Baby() { // default constructor
 	}
 
-	Baby(string s, int w) { // constructor
+	Baby(string s, int w, string w) { // constructor
 		name.assign(s);
 		weight = w;
 	}
@@ -29,7 +29,7 @@ private:
 	int weight;
 };
 
-bool jw_search ( int *list, int size, int key, int*& rec )
+bool jw_search ( int *list, int size, int key, int*& rec, int rec1 )
 {
   // Basic sequential search
   bool found = false;
