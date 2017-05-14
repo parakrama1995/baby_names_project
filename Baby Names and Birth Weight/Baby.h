@@ -29,6 +29,30 @@ private:
 	int weight;
 };
 
+class client {
+public:
+	() { // default constructor
+	}
+
+	(string s, int w, string w) { // constructor
+		name.assign(s);
+		weight = w;
+	}
+
+	// a "getter" method
+	int getWeight() {
+		return weight;
+	}
+
+	// a "getter" method
+	string getName() {
+		return name;
+	}
+
+private:
+	string name;
+	int weight;
+};
 bool jw_search ( int *list, int size, int key, int*& rec, int rec1 )
 {
   // Basic sequential search
